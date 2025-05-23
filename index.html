@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRENA-TI</title>
+    <link rel="icon" href="images/logo-hmj.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo-undiksha.png" alt="Logo UNDIKSHA" class="logo">
+                <img src="images/logo-hmj.png" alt="Logo HMJ TI" class="logo">
+                <h1>SIRENA-TI</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#beranda" class="active">Beranda</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#tujuan">Tujuan</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration Status Banner -->
+    <div id="registrationStatus" class="registration-status">
+        <div class="container">
+            <div class="status-content">
+                <i class="fas fa-info-circle"></i>
+                <span id="statusText">Pendaftaran belum dimulai</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Sistem Pendaftaran Ulang Mahasiswa Baru</h2>
+                <p>SIRENA-TI adalah platform resmi untuk pendaftaran ulang mahasiswa baru jurusan Teknik Informatika. Sistem ini dirancang untuk memudahkan proses administrasi dan memastikan semua mahasiswa baru terdaftar dengan benar.</p>
+                <div class="hero-buttons">
+                    <a href="pendaftaran.html" id="daftarBtn" class="btn btn-primary disabled">
+                        <i class="fas fa-user-plus"></i> Daftar Ulang Sekarang
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/robot-hero.png" alt="Robot SIRENA-TI" class="floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2 class="section-title">Timeline dan Pendaftaran Ulang</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Pembukaan Pendaftaran</h3>
+                        <span class="date">1 Juli 2025</span>
+                        <p>Pendaftaran ulang dibuka untuk seluruh mahasiswa baru Teknik Informatika</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Verifikasi Data</h3>
+                        <span class="date">5-10 Juli 2025</span>
+                        <p>Proses verifikasi data oleh panitia dan pengumuman hasil verifikasi</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Pembagian Kelompok</h3>
+                        <span class="date">15 Juli 2025</span>
+                        <p>Pengumuman kelompok orientasi dan informasi kegiatan</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Orientasi Teknik Informatika</h3>
+                        <span class="date">1-5 Agustus 2025</span>
+                        <p>Pelaksanaan kegiatan orientasi mahasiswa baru</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="pendaftaran.html" id="daftarBtn2" class="btn btn-primary disabled">
+                    <i class="fas fa-user-plus"></i> Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan Umum (FAQ)</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Apa saja dokumen yang perlu disiapkan untuk pendaftaran ulang?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Dokumen yang perlu disiapkan antara lain: Kartu Tanda Mahasiswa (jika sudah ada), Ijazah terakhir (scan), Kartu Keluarga (scan), dan bukti pembayaran UKT. Semua dokumen harus dalam format JPG, PNG, atau PDF dengan ukuran maksimal 2MB per file.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Bagaimana jika saya belum mendapatkan NIM?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Jika Anda belum mendapatkan NIM, Anda tetap bisa melakukan pendaftaran dengan memilih program studi pada dropdown yang tersedia. NIM dapat diupdate nanti setelah Anda menerimanya dari pihak universitas.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Kapan saya akan mendapatkan informasi kelompok orientasi?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Informasi kelompok orientasi akan diumumkan pada tanggal 15 Juli 2025 melalui email yang Anda daftarkan dan juga dapat diakses melalui website SIRENA-TI.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Apakah saya perlu membayar biaya pendaftaran ulang?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Tidak, pendaftaran ulang tidak dikenakan biaya tambahan. Biaya yang perlu dibayarkan hanya UKT sesuai dengan ketentuan universitas yang telah ditetapkan.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Bagaimana jika saya mengalami kendala teknis saat pendaftaran?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Jika mengalami kendala teknis, silakan hubungi tim support kami melalui email support@sirena-ti.ac.id atau nomor WhatsApp +62812345678 (jam kerja 08.00-16.00 WITA).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tujuan Section -->
+    <section id="tujuan" class="tujuan">
+        <div class="container">
+            <h2 class="section-title">Tujuan SIRENA-TI</h2>
+            <p class="section-desc">Ada beberapa tujuan pembuatan Sistem Pendaftaran Ulang Mahasiswa Baru Teknik Informatika, diantaranya</p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Mudah Digunakan</h3>
+                    <p>Mempermudah dalam melakukan pendaftaran ulang mahasiswa baru Teknik Informatika Undiksha</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Ramah Kertas</h3>
+                    <p>Mengurangi penggunaan kertas yang biasanya digunakan dalam pengumpulan berkas pendaftaran ulang secara konvensional</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Proses Mudah</h3>
+                    <p>Mempermudah dalam melakukan pendataan, verifikasi data, pembagian kelompok, hingga penyampaian informasi orientasi mahasiswa baru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-undiksha.png" alt="Logo UNDIKSHA" class="logo">
+                    <img src="images/logo-hmj.png" alt="Logo HMJ TI" class="logo">
+                <div class="social-media">
+                    <a href="https://web.facebook.com/hmj.ti.undiksha" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hmj_ti.undiksha" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@hmjtiundiksha" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Akses Cepat</h4>
+                <ul>
+                    <li><a href="https://hmjti.undiksha.ac.id/" target="_blank">Web HMJ</a></li>
+                    <li><a href="https://hmjti.undiksha.ac.id/integer" target="_blank">Web Integer</a></li>
+                    <li><a href="https://eors.hmjtiundiksha.com/" target="_blank">EORS</a></li>
+                    <li><a href="https://etika.hmjtiundiksha.com/" target="_blank">ETIKA</a></li>
+                    <li><a href="https://iuran.hmjtiundiksha.com/" target="_blank">Iuran HMJ</a></li>
+                    <li><a href="https://inventaris.hmjtiundiksha.com/status-barang" target="_blank">Inventaris</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Konten</h4>
+                <ul>
+                    <li><a href="#tujuan">Tujuan SIRENA-TI</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Layanan</h4>
+                <p>Jl. Udayana No.11, Banjar Tegal, Singaraja, Kabupaten Buleleng, Bali</p>
+                <p>Email: <a href="mailto:hmjtiundiksha@gmail.com">hmjtiundiksha@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2025 HMJ TI Undiksha</p>
+            <p>Made with ❤️ by <a href="#" class="footer-link">GanaDev.Com</a> X <a href="#" class="footer-link">Web Dev HMJ TI</a></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

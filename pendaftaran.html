@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Ulang Mahasiswa | SIRENA-TI</title>
+    <link rel="icon" href="images/logo-hmj.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="registration-page">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Formulir Pendaftaran Ulang</h2>
+                    <p>Silakan isi formulir di bawah ini dengan data yang benar</p>
+                    <div class="robot-form">
+                        <img src="images/robot-admin.png" alt="Robot Form" class="form-robot">
+                    </div>
+                </div>
+
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName">Nama Lengkap <span class="required">*</span></label>
+                        <input type="text" id="fullName" placeholder="Nama" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Status NIM:</label>
+                        <div class="toggle-buttons">
+                            <button type="button" class="toggle-btn active" data-value="yes">Sudah punya NIM</button>
+                            <button type="button" class="toggle-btn" data-value="no">Belum punya NIM</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="nimGroup">
+                        <label for="nim">Nomor Induk Mahasiswa (NIM) <span class="required">*</span></label>
+                        <input type="text" id="nim" placeholder="25xxxxxxxx" required />
+                        <small>NIM harus terdiri dari 10 digit angka</small>
+                    </div>
+
+                    <div class="form-group" id="prodiGroup" style="display: none;">
+                        <label for="prodi">Program Studi</label>
+                        <select id="prodi">
+                            <option value="">-- Pilih Program Studi --</option>
+                            <option value="PTI">PTI</option>
+                            <option value="TRPL">TRPL</option>
+                            <option value="SI">SI</option>
+                            <option value="ILKOM">ILKOM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" placeholder="nama@student.undiksha.ac.id" required />
+                        <small>Email harus menggunakan domain @student.undiksha.ac.id</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">Nomor WhatsApp <span class="required">*</span></label>
+                        <input type="tel" id="whatsapp" placeholder="08xxxxxxxxxx" required />
+                        <small>Nomor WhatsApp hanya boleh berisi angka</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="proofFile">Bukti Penerimaan Mahasiswa <span class="required">*</span></label>
+                        <div id="fileUploadArea" class="file-upload-area">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Klik di sini untuk unggah file</p>
+                            <small>Max 5MB, format JPG, PNG, PDF</small>
+                        </div>
+                        <input type="file" id="proofFile" style="display:none" />
+                        <div id="fileInfo" class="file-info" style="display:none"></div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agreement" required />
+                        <label for="agreement">Dengan mendaftar, Anda menyetujui Syarat & Ketentuan kami.</label>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Daftar Sekarang
+                        </button>
+                        <a href="index.html" class="btn btn-outline">Kembali ke Beranda</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
