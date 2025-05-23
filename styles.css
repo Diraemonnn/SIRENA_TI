@@ -517,7 +517,7 @@ nav ul li a.active::after {
 }
 
 .form-container {
-  max-width: 800px;
+  /*max-width: 800px;*/
   margin: 0 auto;
   background-color: var(--white);
   border-radius: 10px;
